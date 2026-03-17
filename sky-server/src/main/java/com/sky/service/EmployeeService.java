@@ -1,8 +1,10 @@
 package com.sky.service;
 
+import com.sky.dto.EmployeeDTO;
 import com.sky.dto.EmployeeLoginDTO;
 import com.sky.entity.Employee;
 
+//只是接口，员工服务
 public interface EmployeeService {
 
     /**
@@ -11,5 +13,6 @@ public interface EmployeeService {
      * @return
      */
     Employee login(EmployeeLoginDTO employeeLoginDTO);
-
+/*新增员工*/
+    void save(EmployeeDTO employeeDTO);
 }
